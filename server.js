@@ -1,7 +1,12 @@
-import jsonServer from 'json-server'
-import fs from 'fs'
+import { createRequire } from 'module'
 import path from 'path'
 import { fileURLToPath } from 'url'
+
+// Create a require function
+const require = createRequire(import.meta.url)
+
+// Use require to import json-server
+const jsonServer = require('json-server')
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

@@ -66,8 +66,8 @@ const Courses = () => {
     const fetchData = async () => {
       try {
         const [coursesResponse, teachersResponse] = await Promise.all([
-          axios.get('http://localhost:3001/courses'),
-          axios.get('http://localhost:3001/teachers')
+          axios.get('/api/courses'),
+          axios.get('/api/teachers')
         ]);
         setCourses(coursesResponse.data);
         setTeachers(teachersResponse.data);
@@ -92,7 +92,7 @@ const Courses = () => {
 
   const handleCourseClick = async (course) => {
     try {
-      const response = await axios.get(`http://localhost:3001/courses/${course.id}`);
+      const response = await axios.get(`/api/courses/${course.id}`);
       setSelectedCourse(response.data);
     } catch (error) {
       console.error('Error fetching course details:', error);
@@ -132,8 +132,8 @@ const Courses = () => {
     e.preventDefault();
     try {
       if (editMode) {
-        await axios.put(`http://localhost:3001/courses/${currentCourse.id}`, currentCourse);
-        const response = await axios.get('http://localhost:3001/courses');
+        await axios.put(`/api/courses/${currentCourse.id}`, currentCourse);
+        const response = await axios.get('/api/courses');
         setCourses(response.data);
         setSnackbarMessage('Course updated successfully!');
       } else {
@@ -143,7 +143,7 @@ const Courses = () => {
           subjects: []
         };
         
-        const response = await axios.post('http://localhost:3001/courses', newCourse);
+        const response = await axios.post('/api/courses', newCourse);
         setCourses(prev => [...prev, response.data]);
         setSnackbarMessage('Course added successfully!');
       }
@@ -162,13 +162,13 @@ const Courses = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this course?');
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:3001/courses/${courseID}`);
+        await axios.delete(`/api/courses/${courseID}`);
         
         if (selectedCourse && selectedCourse.id === courseID) {
           setSelectedCourse(null);
         }
         
-        const response = await axios.get('http://localhost:3001/courses');
+        const response = await axios.get('/api/courses');
         setCourses(response.data);
         
         setSnackbarMessage('Course deleted successfully!');
@@ -227,10 +227,10 @@ const Courses = () => {
         };
 
         // Update in database
-        await axios.put(`http://localhost:3001/courses/${selectedCourse.id}`, updatedCourse);
+        await axios.put(`/api/courses/${selectedCourse.id}`, updatedCourse);
 
         // Also update any existing grades with the new subject ID
-        const gradesResponse = await axios.get('http://localhost:3001/grades');
+        const gradesResponse = await axios.get('/api/grades');
         const gradesToUpdate = gradesResponse.data.filter(
           grade => grade.subjectID === currentSubject.originalID
         );
@@ -238,7 +238,7 @@ const Courses = () => {
         // Update grades with new subject ID if necessary
         if (gradesToUpdate.length > 0) {
           const gradeUpdatePromises = gradesToUpdate.map(grade =>
-            axios.put(`http://localhost:3001/grades/${grade.id}`, {
+            axios.put(`/api/grades/${grade.id}`, {
               ...grade,
               subjectID: currentSubject.subjectID
             })
@@ -250,7 +250,7 @@ const Courses = () => {
         setSelectedCourse(updatedCourse);
         
         // Refresh courses
-        const coursesResponse = await axios.get('http://localhost:3001/courses');
+        const coursesResponse = await axios.get('/api/courses');
         setCourses(coursesResponse.data);
 
         setSnackbarMessage('Subject updated successfully!');
@@ -280,10 +280,10 @@ const Courses = () => {
         };
 
         // Update course in database
-        await axios.put(`http://localhost:3001/courses/${selectedCourse.id}`, updatedCourse);
+        await axios.put(`/api/courses/${selectedCourse.id}`, updatedCourse);
 
         // Get all active students in this course
-        const studentsResponse = await axios.get('http://localhost:3001/students');
+        const studentsResponse = await axios.get('/api/students');
         const activeStudents = studentsResponse.data.filter(
           student => student.course === selectedCourse.name && student.status === 'Active'
         );
@@ -291,7 +291,7 @@ const Courses = () => {
         // Create grade entries for all active students
         if (activeStudents.length > 0) {
           const gradePromises = activeStudents.map(student => {
-            return axios.post('http://localhost:3001/grades', {
+            return axios.post('/api/grades', {
               id: uuidv4(), 
               ID: student.id,
               subjectID: currentSubject.subjectID,
@@ -311,7 +311,7 @@ const Courses = () => {
         setSelectedCourse(updatedCourse);
         
         // Refresh courses list
-        const response = await axios.get('http://localhost:3001/courses');
+        const response = await axios.get('/api/courses');
         setCourses(response.data);
 
         setSnackbarMessage('Subject added successfully!');
@@ -339,13 +339,13 @@ const Courses = () => {
           subjects: updatedSubjects
         };
         
-        await axios.put(`http://localhost:3001/courses/${selectedCourse.id}`, updatedCourse);
+        await axios.put(`/api/courses/${selectedCourse.id}`, updatedCourse);
         
         // Update the selected course state immediately
         setSelectedCourse(updatedCourse);
         
         // Fetch updated courses and update the courses list
-        const response = await axios.get('http://localhost:3001/courses');
+        const response = await axios.get('/api/courses');
         setCourses(response.data);
         
         setSnackbarMessage('Subject deleted successfully!');
@@ -388,7 +388,7 @@ const Courses = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/courses');
+      const response = await axios.get('/api/courses');
       setCourses(response.data);
     } catch (error) {
       console.error('Error fetching courses:', error);

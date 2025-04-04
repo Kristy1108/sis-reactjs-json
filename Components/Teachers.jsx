@@ -81,8 +81,8 @@ const Teachers = () => {
     const fetchData = async () => {
       try {
         const [teachersResponse, coursesResponse] = await Promise.all([
-          axios.get('http://localhost:3001/teachers'),
-          axios.get('http://localhost:3001/courses')
+          axios.get('/api/teachers'),
+          axios.get('/api/courses')
         ]);
         setTeachers(teachersResponse.data);
         const courseNames = coursesResponse.data.map(course => course.name);
@@ -181,8 +181,8 @@ const Teachers = () => {
     try {
       // Get all teachers and students
       const [teachersRes, studentsRes] = await Promise.all([
-        axios.get('http://localhost:3001/teachers'),
-        axios.get('http://localhost:3001/students')
+        axios.get('/api/teachers'),
+        axios.get('/api/students')
       ]);
 
       // Check if NRIC exists in teachers (excluding current teacher if editing)
@@ -235,11 +235,11 @@ const Teachers = () => {
       };
 
       if (editMode) {
-        await axios.put(`http://localhost:3001/teachers/${teacherData.id}`, teacherData);
+        await axios.put(`/api/teachers/${teacherData.id}`, teacherData);
         setSnackbarMessage('Teacher updated successfully!');
       } else {
         // For new teacher, use POST
-        await axios.post('http://localhost:3001/teachers', teacherData);
+        await axios.post('/api/teachers', teacherData);
         setSnackbarMessage('Teacher added successfully!');
       }
 
@@ -247,7 +247,7 @@ const Teachers = () => {
       setSnackbarOpen(true);
       
       // Refresh teachers list
-      const response = await axios.get('http://localhost:3001/teachers');
+      const response = await axios.get('/api/teachers');
       setTeachers(response.data);
       
       handleCloseModal();
@@ -270,7 +270,7 @@ const Teachers = () => {
     if (confirmDelete) {
       try {
         // Delete the teacher
-        await axios.delete(`http://localhost:3001/teachers/${teacherId}`);
+        await axios.delete(`/api/teachers/${teacherId}`);
         
         // Update local state by removing the deleted teacher
         setTeachers(prevTeachers => 
@@ -305,7 +305,7 @@ const Teachers = () => {
       };
 
       // Send the update request with the complete teacher data
-      await axios.put(`http://localhost:3001/teachers/${teacherId}`, updatedTeacher);
+      await axios.put(`/api/teachers/${teacherId}`, updatedTeacher);
       
       // Update local state
       const updatedTeachers = teachers.map(t => 

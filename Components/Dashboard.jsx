@@ -23,10 +23,10 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Fetch data from the mock API
-    axios.get('http://localhost:3001/students').then((response) => setStudents(response.data));
-    axios.get('http://localhost:3001/teachers').then((response) => setTeachers(response.data));
-    axios.get('http://localhost:3001/courses').then((response) => setCourses(response.data));
-    axios.get('http://localhost:3001/grades').then((response) => setGrades(response.data));
+    axios.get('/api/students').then((response) => setStudents(response.data));
+    axios.get('/api/teachers').then((response) => setTeachers(response.data));
+    axios.get('/api/courses').then((response) => setCourses(response.data));
+    axios.get('/api/grades').then((response) => setGrades(response.data));
   }, []);
 
   const feeCollectionData = [

@@ -62,9 +62,9 @@ const GradeManagement = () => {
   const fetchData = async () => {
     try {
       const [gradesRes, studentsRes, coursesRes] = await Promise.all([
-        axios.get('http://localhost:3001/grades'),
-        axios.get('http://localhost:3001/students'),
-        axios.get('http://localhost:3001/courses')
+        axios.get('/api/grades'),
+        axios.get('/api/students'),
+        axios.get('/api/courses')
       ]);
       setGrades(gradesRes.data);
       setStudents(studentsRes.data);
@@ -129,7 +129,7 @@ const GradeManagement = () => {
 
       if (existingGrade) {
         // Update existing grade
-        await axios.put(`http://localhost:3001/grades/${existingGrade.id}`, {
+        await axios.put(`/api/grades/${existingGrade.id}`, {
           ...existingGrade,
           homework: currentGrade.homework,
           assignment: currentGrade.assignment,
@@ -141,7 +141,7 @@ const GradeManagement = () => {
         setSnackbarMessage('Grade updated successfully!');
       } else {
         // Add new grade
-        await axios.post('http://localhost:3001/grades', {
+        await axios.post('/api/grades', {
           id: uuidv4(),
           ID: currentGrade.ID,
           subjectID: currentGrade.subjectID,
@@ -177,7 +177,7 @@ const GradeManagement = () => {
           throw new Error('Grade not found');
         }
 
-        await axios.delete(`http://localhost:3001/grades/${gradeToDelete.id}`);
+        await axios.delete(`/api/grades/${gradeToDelete.id}`);
         setSnackbarMessage('Grade deleted successfully!');
         setSnackbarSeverity('success');
         setSnackbarOpen(true);

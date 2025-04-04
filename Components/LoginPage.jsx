@@ -71,7 +71,7 @@ const LoginPage = () => {
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:3001/students');
+      const response = await axios.get('/api/students');
       const studentExists = response.data.some(student => 
         student.country === phoneDetails.country && 
         student.phoneNumber === phoneDetails.phoneNumber
@@ -97,7 +97,7 @@ const LoginPage = () => {
 
   const handleSubmit = async (values) => {
     try {
-      const response = await axios.get('http://localhost:3001/users', {
+      const response = await axios.get('/api/users', {
         params: {
           email: values.email,
           password: values.password,
@@ -138,7 +138,7 @@ const LoginPage = () => {
   const handleVerify = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:3001/students');
+      const response = await axios.get('/api/students');
       const studentExists = response.data.some(student => 
         student.country === signUpDetails.country && 
         student.phoneNumber === signUpDetails.phoneNumber
@@ -164,7 +164,7 @@ const LoginPage = () => {
 
     try {
       // Check if email exists
-      const response = await axios.get('http://localhost:3001/users');
+      const response = await axios.get('/api/users');
       const emailExists = response.data.some(user => user.email === signUpDetails.email);
 
       if (emailExists) {
@@ -182,7 +182,7 @@ const LoginPage = () => {
         role: signUpDetails.role.toLowerCase() // Convert to lowercase to match existing format
       };
 
-      await axios.post('http://localhost:3001/users', newUser);
+      await axios.post('/api/users', newUser);
       
       setSnackbarMessage('Sign up successful!');
       setSnackbarSeverity('success');

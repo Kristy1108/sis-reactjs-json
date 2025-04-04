@@ -73,7 +73,7 @@ const Students = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/students');
+      const response = await axios.get('/api/students');
       console.log('Fetched students:', response.data); // Debug log
       setStudents(response.data);
     } catch (error) {
@@ -86,7 +86,7 @@ const Students = () => {
 
   const fetchAvailableCourses = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/courses');
+      const response = await axios.get('/api/courses');
       setAvailableCourses(response.data);
     } catch (error) {
       console.error('Error fetching courses:', error);
@@ -168,8 +168,8 @@ const Students = () => {
     try {
       // Get all teachers and students
       const [teachersRes, studentsRes] = await Promise.all([
-        axios.get('http://localhost:3001/teachers'),
-        axios.get('http://localhost:3001/students')
+        axios.get('/api/teachers'),
+        axios.get('/api/students')
       ]);
 
       // Check if NRIC exists in teachers
@@ -208,19 +208,19 @@ const Students = () => {
       };
 
       if (editMode) {
-        await axios.put(`http://localhost:3001/students/${studentData.id}`, studentData);
+        await axios.put(`/api/students/${studentData.id}`, studentData);
       } else {
         // First, save the new student
-        await axios.post('http://localhost:3001/students', studentData);
+        await axios.post('/api/students', studentData);
         
         // Then get the course details
-        const coursesResponse = await axios.get('http://localhost:3001/courses');
+        const coursesResponse = await axios.get('/api/courses');
         const studentCourse = coursesResponse.data.find(course => course.name === studentData.course);
         
         if (studentCourse && studentCourse.subjects) {
           // Create grade records for each subject in the course
           for (const subject of studentCourse.subjects) {
-            await axios.post('http://localhost:3001/grades', {
+            await axios.post('/api/grades', {
               id: Math.random().toString(36).substring(2, 6),
               ID: studentData.id,
               subjectID: subject.subjectID,
@@ -256,7 +256,7 @@ const Students = () => {
     const confirmDelete = window.confirm('Are you sure you want to delete this student?');
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:3001/students/${studentID}`);
+        await axios.delete(`/api/students/${studentID}`);
         setSnackbarMessage('Student deleted successfully!');
         setSnackbarSeverity('success');
         setSnackbarOpen(true);
@@ -272,7 +272,7 @@ const Students = () => {
 
   const handleStatusChange = async (studentID, status) => {
     try {
-      await axios.patch(`http://localhost:3001/students/${studentID}`, { status });
+      await axios.patch(`/api/students/${studentID}`, { status });
       setSnackbarMessage('Student status updated successfully!');
       setSnackbarSeverity('success');
       setSnackbarOpen(true);

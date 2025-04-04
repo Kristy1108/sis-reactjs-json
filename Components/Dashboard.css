@@ -19,9 +19,19 @@ body {
 @media (max-width: 768px) {
     .MuiBox-root {
         flex-direction: column;
+        padding: 10px; /* Add padding for mobile */
     }
   
     .MuiPaper-root {
         min-width: 100% !important;
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .MuiTypography-h6 {
+        font-size: 1.2rem; /* Adjust font size for headings */
+    }
+
+    .MuiButton-contained {
+        width: 100%; /* Make buttons full width */
     }
 }

@@ -20,7 +20,7 @@ const MainLayout = ({ children, title }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const isMobile = useMediaQuery('(max-width:1000px)');
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -200,7 +200,7 @@ const MainLayout = ({ children, title }) => {
         sx={{
           flexGrow: 1,
           p: isMobile ? 2 : 4,
-          pl: isMobile ? 4 : 4,
+          pl: isMobile ? 0 : 4,
           marginLeft: isMobile ? 0 : (isSidebarOpen ? '300px' : '100px'),
           marginTop: isMobile ? '64px' : 0,
           transition: 'margin-left 0.3s',

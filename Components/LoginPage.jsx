@@ -19,10 +19,10 @@ import Divider from '@mui/material/Divider';
 const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email('Please enter a valid email address. (Ex. xxx@gmail.com)')
-    .required('Email is required.'),
+    .required('Email is required. (Hint: admin@gmail.com)'),
   password: Yup.string()
     .min(6, 'Password must be at least 6 characters.')
-    .required('Password is required.'),
+    .required('Password is required. (Hint: admin123)'),
 });
 
 const LoginPage = () => {

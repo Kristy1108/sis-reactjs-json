@@ -1,0 +1,1164 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "1738665430469",
+      "email": "John@gmail.com",
+      "password": "123123",
+      "role": "student"
+    },
+    {
+      "id": "1738678862579",
+      "email": "John5@gmail.com",
+      "password": "123123",
+      "role": "student"
+    },
+    {
+      "id": "1738735032076",
+      "email": "John10@gmail.com",
+      "password": "123123",
+      "role": "student"
+    }
+  ],
+  "students": [
+    {
+      "id": "768c",
+      "name": "John Doe",
+      "nricPassport": "A1234567",
+      "gender": "Male",
+      "dob": "2000-01-01",
+      "age": 23,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "intake": "Jan2024",
+      "address": "123 Main Street, Kuala Lumpur",
+      "course": "Diploma Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "768b",
+      "name": "Jane Smith",
+      "nricPassport": "B7654321",
+      "gender": "Female",
+      "dob": "2001-05-15",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6587654321",
+      "intake": "Feb2024",
+      "address": "456 Orchard Road, Singapore",
+      "course": "Degree Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "728c",
+      "name": "Alice Johnson",
+      "nricPassport": "C12345671",
+      "gender": "Female",
+      "dob": "2002-03-20",
+      "age": 21,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "intake": "Mar2024",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "course": "Diploma Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "763c",
+      "name": "Bob Brown",
+      "nricPassport": "D76543213",
+      "gender": "Male",
+      "dob": "2001-12-10",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "intake": "Apr2024",
+      "address": "101 Bukit Timah Road, Singapore",
+      "course": "Degree Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "769c",
+      "name": "Charlie Davis",
+      "nricPassport": "E12345671",
+      "gender": "Male",
+      "dob": "2000-07-15",
+      "age": 23,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "intake": "May2024",
+      "address": "123 Main Street, Kuala Lumpur",
+      "course": "Diploma Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "268c",
+      "name": "Diana Evans",
+      "nricPassport": "F7654321",
+      "gender": "Female",
+      "dob": "2001-08-20",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6587654321",
+      "intake": "Jun2024",
+      "address": "456 Orchard Road, Singapore",
+      "course": "Degree Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "363c",
+      "name": "Eva Green",
+      "nricPassport": "G1234567",
+      "gender": "Female",
+      "dob": "2002-09-25",
+      "age": 21,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "intake": "Jul2024",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "course": "Diploma Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "568c",
+      "name": "Frank Harris",
+      "nricPassport": "H7654321",
+      "gender": "Male",
+      "dob": "2001-10-30",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "intake": "Aug2024",
+      "address": "101 Bukit Timah Road, Singapore",
+      "course": "Degree Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "468c",
+      "name": "Grace Lee",
+      "nricPassport": "I1234567",
+      "gender": "Male",
+      "dob": "2000-11-05",
+      "age": 23,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "intake": "Sep2024",
+      "address": "123 Main Street, Kuala Lumpur",
+      "course": "Diploma Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "668c",
+      "name": "Henry Miller",
+      "nricPassport": "J7654321",
+      "gender": "Male",
+      "dob": "2001-12-10",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6587654321",
+      "intake": "Oct2024",
+      "address": "456 Orchard Road, Singapore",
+      "course": "Degree Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "868c",
+      "name": "Ivy Ng",
+      "nricPassport": "K1234567",
+      "gender": "Female",
+      "dob": "2002-01-15",
+      "age": 21,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "intake": "Nov2024",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "course": "Diploma Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "968c",
+      "name": "Jack Owen",
+      "nricPassport": "L7654321",
+      "gender": "Male",
+      "dob": "2001-02-20",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "intake": "Dec2024",
+      "address": "101 Bukit Timah Road, Singapore",
+      "course": "Degree Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "666g",
+      "name": "Karen Park",
+      "nricPassport": "M1234567",
+      "gender": "Female",
+      "dob": "2000-03-25",
+      "age": 23,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "intake": "Jan2025",
+      "address": "123 Main Street, Kuala Lumpur",
+      "course": "Diploma Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "444c",
+      "name": "Leo Quinn",
+      "nricPassport": "N7654321",
+      "gender": "Male",
+      "dob": "2001-04-30",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6587654321",
+      "intake": "Feb2025",
+      "address": "456 Orchard Road, Singapore",
+      "course": "Degree Software Engineering",
+      "status": "Active"
+    },
+    {
+      "id": "888c",
+      "name": "Mia Roberts",
+      "nricPassport": "O1234567",
+      "gender": "Female",
+      "dob": "2002-05-05",
+      "age": 21,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "intake": "Mar2025",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "course": "Diploma Information Technology",
+      "status": "Active"
+    },
+    {
+      "id": "999c",
+      "name": "Nathan Scott",
+      "nricPassport": "P7654321",
+      "gender": "Male",
+      "dob": "2001-06-10",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "intake": "Apr2025",
+      "address": "101 Bukit Timah Road, Singapore",
+      "course": "Degree Information Technology",
+      "status": "Graduated"
+    },
+    {
+      "id": "777c",
+      "name": "Olivia Taylor",
+      "nricPassport": "Q1234567",
+      "gender": "Female",
+      "dob": "2000-07-15",
+      "age": 23,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "intake": "May2025",
+      "address": "123 Main Street, Kuala Lumpur",
+      "course": "Diploma Software Engineering",
+      "status": "Graduated"
+    },
+    {
+      "id": "555c",
+      "name": "Quincy Vance",
+      "nricPassport": "S1234567",
+      "gender": "Male",
+      "dob": "2002-09-25",
+      "age": 21,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "intake": "Jul2025",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "course": "Diploma Information Technology",
+      "status": "Graduated"
+    },
+    {
+      "id": "768g",
+      "name": "Rachel White",
+      "nricPassport": "T7654321",
+      "gender": "Female",
+      "dob": "2001-10-30",
+      "age": 22,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "intake": "Aug2025",
+      "address": "101 Bukit Timah Road, Singapore",
+      "course": "Degree Information Technology",
+      "status": "Graduated"
+    },
+    {
+      "id": "6d6f",
+      "name": "Chopper",
+      "nricPassport": "991111105022",
+      "gender": "Male",
+      "dob": "2009-02-01",
+      "age": 16,
+      "country": "Malaysia",
+      "phoneNumber": "+60199323231",
+      "intake": "Jan2024",
+      "course": "Degree Software Engineering",
+      "status": "Active",
+      "address": "One Piece"
+    },
+    {
+      "id": "tk5n",
+      "name": "xxxx",
+      "nricPassport": "xxx",
+      "gender": "Female",
+      "dob": "2009-02-02",
+      "age": 16,
+      "country": "Malaysia",
+      "phoneNumber": "+60123123",
+      "intake": "Feb2024",
+      "course": "Xx",
+      "status": "Active",
+      "address": "xxx"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "421s",
+      "name": "Dr. Alice Wong",
+      "nricPassport": "C1234567",
+      "gender": "Female",
+      "dob": "1980-03-20",
+      "age": 43,
+      "country": "Malaysia",
+      "phoneNumber": "+60129876543",
+      "joinedDate": "2010-06-01",
+      "address": "789 Petaling Street, Kuala Lumpur",
+      "courses": [
+        "Diploma Software Engineering",
+        "Degree Software Engineering"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "657t",
+      "name": "Mr. Bob Tan",
+      "nricPassport": "D7654321",
+      "gender": "Male",
+      "dob": "1975-12-10",
+      "age": 48,
+      "country": "Singapore",
+      "phoneNumber": "+6598765432",
+      "joinedDate": "2015-08-15",
+      "address": "101 Bukit Timah Road, Singapore",
+      "status": "Active",
+      "courses": [
+        "Degree Information Technology"
+      ]
+    },
+    {
+      "id": "823w",
+      "name": "Ms. Carol Lim",
+      "nricPassport": "E1234567",
+      "gender": "Female",
+      "dob": "1985-05-25",
+      "age": 38,
+      "country": "Malaysia",
+      "phoneNumber": "+60123456789",
+      "joinedDate": "2018-09-10",
+      "address": "123 Main Street, Kuala Lumpur",
+      "status": "Active",
+      "courses": [
+        "Diploma Information Technology"
+      ]
+    },
+    {
+      "id": "829d",
+      "name": "Mr Karthi",
+      "nricPassport": "991111105023",
+      "gender": "Male",
+      "dob": "1994-06-09",
+      "age": 31,
+      "country": "Malaysia",
+      "phoneNumber": "+60199323231",
+      "joinedDate": "2025-02-01",
+      "status": "Active",
+      "address": "Petaling Jaya",
+      "courses": [
+        "Degree Software Engineering"
+      ]
+    },
+    {
+      "id": "7pfi",
+      "name": "Hello Kitty",
+      "nricPassport": "xx123",
+      "gender": "Female",
+      "dob": "2000-01-31",
+      "age": 25,
+      "country": "Singapore",
+      "phoneNumber": "+6511111111",
+      "joinedDate": "2025-02-05",
+      "courses": [
+        "Xx"
+      ],
+      "status": "Active",
+      "address": "xxx"
+    }
+  ],
+  "courses": [
+    {
+      "name": "Diploma Software Engineering",
+      "courseFee": "15000",
+      "subjects": [
+        {
+          "subjectID": "WF211",
+          "subjectName": "Web Application Fundamentals"
+        },
+        {
+          "subjectID": "DS211",
+          "subjectName": "Relational Database Management System RDBMS - MySQL"
+        },
+        {
+          "subjectID": "AW221",
+          "subjectName": "Advanced Web Development with PhP and MySQL"
+        },
+        {
+          "subjectID": "CP211",
+          "subjectName": "C# Programming"
+        }
+      ],
+      "id": "0b51"
+    },
+    {
+      "name": "Degree Software Engineering",
+      "courseFee": 25000,
+      "subjects": [
+        {
+          "subjectID": "PL431",
+          "subjectName": "Java Programming Language"
+        },
+        {
+          "subjectID": "AW421",
+          "subjectName": "Advanced Web Application Design II"
+        },
+        {
+          "subjectID": "ML421",
+          "subjectName": "Machine Learning Fundamentals with Python"
+        },
+        {
+          "subjectID": "AI411",
+          "subjectName": "Artificial Intelligence Fundamentals with Python"
+        }
+      ],
+      "id": "99ca"
+    },
+    {
+      "courseID": 3,
+      "name": "Diploma Information Technology",
+      "courseFee": 12000,
+      "subjects": [
+        {
+          "subjectID": "IT101",
+          "subjectName": "Introduction to IT"
+        },
+        {
+          "subjectID": "DB201",
+          "subjectName": "Database Management"
+        }
+      ],
+      "id": "eb2e"
+    },
+    {
+      "courseID": 4,
+      "name": "Degree Information Technology",
+      "courseFee": "22000",
+      "subjects": [
+        {
+          "subjectID": "SI441",
+          "subjectName": "System Integration Project I"
+        },
+        {
+          "subjectID": "PM411",
+          "subjectName": "Project Management"
+        }
+      ],
+      "id": "0639"
+    },
+    {
+      "id": "c59e9e44-157a-4f03-a1e4-e650f4b33e1f",
+      "name": "Xx",
+      "courseFee": "12",
+      "subjects": [
+        {
+          "subjectID": "ss1",
+          "subjectName": "TEtsing"
+        },
+        {
+          "subjectID": "2",
+          "subjectName": "tetsing"
+        }
+      ]
+    }
+  ],
+  "grades": [
+    {
+      "ID": "768c",
+      "subjectID": "WF211",
+      "homework": "3",
+      "assignment": "3",
+      "groupDiscussion": "3",
+      "project": "33",
+      "totalScore": 42,
+      "grade": "F",
+      "id": "4467c782-c502-4aae-ace9-b291b280240b"
+    },
+    {
+      "ID": "768c",
+      "subjectID": "DS211",
+      "homework": "5",
+      "assignment": "5",
+      "groupDiscussion": "5",
+      "project": "55",
+      "totalScore": 70,
+      "grade": "B",
+      "id": "97681264-5c26-4a28-9d00-457c44887f0c"
+    },
+    {
+      "ID": "768b",
+      "subjectID": "WF211",
+      "homework": "8",
+      "assignment": "8",
+      "groupDiscussion": "8",
+      "project": "70",
+      "totalScore": 94,
+      "grade": "A+",
+      "id": "5ec8d875-99ca-4908-abbd-80d8b47b4e07"
+    },
+    {
+      "id": "9c62c0bc-cdcd-4399-93a7-4d64c2da9c67",
+      "ID": "768b",
+      "subjectID": "DS211",
+      "homework": "9",
+      "assignment": "9",
+      "groupDiscussion": "9",
+      "project": "66",
+      "totalScore": 93,
+      "grade": "A+"
+    },
+    {
+      "id": "f2d391f3-3ee5-491e-ad06-a0c6f85e9568",
+      "ID": "728c",
+      "subjectID": "SI441",
+      "homework": "6",
+      "assignment": "8",
+      "groupDiscussion": "8",
+      "project": "70",
+      "totalScore": 92,
+      "grade": "A+"
+    },
+    {
+      "id": "c6367faf-58ca-4312-bde9-13eb3014a54a",
+      "ID": "728c",
+      "subjectID": "PM411",
+      "homework": "5",
+      "assignment": "5",
+      "groupDiscussion": "5",
+      "project": "55",
+      "totalScore": 70,
+      "grade": "B"
+    },
+    {
+      "id": "f0797d1a-2fda-4790-ba17-fd3fb35108d6",
+      "ID": "763c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "11190c14-0ffc-466e-9149-6ac8df909260",
+      "ID": "763c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "ca58b48f-55c0-48d9-97f4-ab6a9c7fe68d",
+      "ID": "769c",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "68143fe8-c062-45c5-a699-93e44aead359",
+      "ID": "769c",
+      "subjectID": "DS211",
+      "homework": "5",
+      "assignment": "5",
+      "groupDiscussion": "5",
+      "project": "55",
+      "totalScore": 70,
+      "grade": "B"
+    },
+    {
+      "id": "44f2c2c5-2fd2-48fc-954c-705b18b22af3",
+      "ID": "268c",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "243b53b5-b1f0-40f6-a45e-752b407bba37",
+      "ID": "268c",
+      "subjectID": "DS211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "15de425c-339b-4ca9-9dd4-f567567566e8",
+      "ID": "363c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "6ceae689-dfa7-4f41-881e-8527e73a6055",
+      "ID": "363c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "afc16495-087c-4cad-ace3-518a3c054269",
+      "ID": "568c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "37ce44e4-dc8a-4309-abac-01b0fee51ff7",
+      "ID": "568c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "d30465f3-64d2-45e8-98d0-290e73c99f3f",
+      "ID": "468c",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "0dbe578d-0957-4983-8b54-5b13a9c8f7cb",
+      "ID": "468c",
+      "subjectID": "DS211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "0333075f-5073-4b36-91da-c3747c1ff398",
+      "ID": "668c",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "c98946b0-1090-4636-96e5-f870ebbc911c",
+      "ID": "668c",
+      "subjectID": "DS211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "9040412a-90ac-4528-81c2-8e2e74bf9e9e",
+      "ID": "868c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "ddfd6557-9478-4b68-b085-14486acef83b",
+      "ID": "868c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "b27a33a5-88fb-48e2-a6d7-51c5aac28af8",
+      "ID": "968c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "ebe33dab-7468-4add-bd42-db5376e6e780",
+      "ID": "968c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "d35d60bd-23ab-4aa0-b801-5ac33b4a3ddd",
+      "ID": "666g",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "d50d4cb4-b004-4767-b991-493a3c6d99a2",
+      "ID": "666g",
+      "subjectID": "DS211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "d0bdcf0d-85f0-420d-b5e8-fe314133a2a2",
+      "ID": "444c",
+      "subjectID": "WF211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "ecd42768-079a-4def-b9b3-d6b8c2666374",
+      "ID": "444c",
+      "subjectID": "DS211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "8dde9607-31a4-4412-acf7-aa5bf211b9f6",
+      "ID": "888c",
+      "subjectID": "SI441",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "52b08cc9-3607-48ec-8522-c90b4084aba6",
+      "ID": "888c",
+      "subjectID": "PM411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "6ba023ad-e25c-4c0c-91b4-c021ae956dbc",
+      "ID": "999c",
+      "subjectID": "SI441",
+      "homework": 9,
+      "assignment": 8,
+      "groupDiscussion": 7,
+      "project": 65,
+      "totalScore": 89,
+      "grade": "A"
+    },
+    {
+      "id": "057a757f-b20c-4d2a-a6a1-0ac6e1b9cfbf",
+      "ID": "999c",
+      "subjectID": "PM411",
+      "homework": 8,
+      "assignment": 9,
+      "groupDiscussion": 8,
+      "project": 70,
+      "totalScore": 95,
+      "grade": "A+"
+    },
+    {
+      "id": "f5e76f8d-037c-4a1c-845c-a50fdba503e4",
+      "ID": "777c",
+      "subjectID": "WF211",
+      "homework": 7,
+      "assignment": 8,
+      "groupDiscussion": 6,
+      "project": 60,
+      "totalScore": 81,
+      "grade": "A"
+    },
+    {
+      "id": "77837960-5857-4fa2-a124-020a5c80e175",
+      "ID": "777c",
+      "subjectID": "DS211",
+      "homework": 9,
+      "assignment": 9,
+      "groupDiscussion": 8,
+      "project": 68,
+      "totalScore": 94,
+      "grade": "A+"
+    },
+    {
+      "id": "08bec8f2-ccf7-4435-ab06-c8e80f50f1d5",
+      "ID": "555c",
+      "subjectID": "SI441",
+      "homework": 10,
+      "assignment": 10,
+      "groupDiscussion": 9,
+      "project": 70,
+      "totalScore": 99,
+      "grade": "A+"
+    },
+    {
+      "id": "91a9150d-91a3-46cd-a2d1-f4ea01aff217",
+      "ID": "555c",
+      "subjectID": "PM411",
+      "homework": 7,
+      "assignment": 8,
+      "groupDiscussion": 6,
+      "project": 60,
+      "totalScore": 81,
+      "grade": "A"
+    },
+    {
+      "id": "db7adb93-0036-4a80-8165-b7ea219bb487",
+      "ID": "768g",
+      "subjectID": "SI441",
+      "homework": 9,
+      "assignment": 9,
+      "groupDiscussion": 8,
+      "project": 68,
+      "totalScore": 94,
+      "grade": "A+"
+    },
+    {
+      "id": "41251c01-1659-4c50-9e49-95c254718bb0",
+      "ID": "768g",
+      "subjectID": "PM411",
+      "homework": 6,
+      "assignment": 7,
+      "groupDiscussion": 5,
+      "project": 55,
+      "totalScore": 73,
+      "grade": "B"
+    },
+    {
+      "id": "9cfcdf82-f5f8-4bd3-97fb-61407672922c",
+      "ID": "6d6f",
+      "subjectID": "WF211",
+      "homework": "3",
+      "assignment": "3",
+      "groupDiscussion": "3",
+      "project": "3",
+      "totalScore": 12,
+      "grade": "F"
+    },
+    {
+      "id": "cfa428b2-7c2c-437e-861d-bebe5ceb5037",
+      "ID": "6d6f",
+      "subjectID": "DS211",
+      "homework": "1",
+      "assignment": "1",
+      "groupDiscussion": "1",
+      "project": "1",
+      "totalScore": 4,
+      "grade": "F"
+    },
+    {
+      "id": "46ce111e-72bc-4fdd-ad45-60b310e67931",
+      "ID": "768c",
+      "subjectID": "AW221",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "146e31cc-af59-488b-849c-5024c66cd40f",
+      "ID": "769c",
+      "subjectID": "AW221",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "5c362166-0a74-4ee3-b636-64f364e0fb07",
+      "ID": "468c",
+      "subjectID": "AW221",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "8c0a0a2f-6f87-4ff2-9e7b-274f27360d89",
+      "ID": "666g",
+      "subjectID": "AW221",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "cf165853-2add-48d0-8cf8-88253bf16187",
+      "ID": "768c",
+      "subjectID": "CP211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "8c457b52-b3d4-4cda-8d80-9e3161896627",
+      "ID": "769c",
+      "subjectID": "CP211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "6e5c9373-bad6-4db6-b504-72494c81cbb6",
+      "ID": "468c",
+      "subjectID": "CP211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "cd9476b1-d793-475f-aa4c-f3d7350df6ed",
+      "ID": "666g",
+      "subjectID": "CP211",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "9766d5c6-092b-447c-957c-fedeedb7d039",
+      "ID": "768b",
+      "subjectID": "ML421",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "0998166b-4db6-47bf-be5c-d5f8184af87e",
+      "ID": "268c",
+      "subjectID": "ML421",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "ad83fc75-bcb6-4fac-9006-699e0c271292",
+      "ID": "668c",
+      "subjectID": "ML421",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "227a57a5-2f92-450d-982f-663553de998d",
+      "ID": "444c",
+      "subjectID": "ML421",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "bed723b8-e666-4b9f-94a9-d1c7535e5877",
+      "ID": "6d6f",
+      "subjectID": "ML421",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "f7f259db-c07f-44eb-91cd-328537d7f91f",
+      "ID": "768b",
+      "subjectID": "AI411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "8a7a6c3b-d821-4887-8997-b133474a80f0",
+      "ID": "268c",
+      "subjectID": "AI411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "75f2323e-7aea-4939-a289-8f6cf1a7e220",
+      "ID": "668c",
+      "subjectID": "AI411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "e9d86ef5-e2ef-4c91-a676-c28ab06ff514",
+      "ID": "444c",
+      "subjectID": "AI411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "e263295e-99d5-469f-b46c-9c113b5c2e84",
+      "ID": "6d6f",
+      "subjectID": "AI411",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    },
+    {
+      "id": "e4ak",
+      "ID": "tk5n",
+      "subjectID": "ss1",
+      "homework": "5",
+      "assignment": "5",
+      "groupDiscussion": "5",
+      "project": "55",
+      "totalScore": 70,
+      "grade": "B"
+    },
+    {
+      "id": "p9q5",
+      "ID": "tk5n",
+      "subjectID": "2",
+      "homework": "",
+      "assignment": "",
+      "groupDiscussion": "",
+      "project": "",
+      "totalScore": "",
+      "grade": ""
+    }
+  ]
+}

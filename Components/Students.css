@@ -1,0 +1,35 @@
+/* Students.css */
+/* Custom styles for the table */
+.MuiTable-root {
+    width: 100%;
+  }
+  
+  .MuiTableCell-root {
+    font-size: 14px;
+  }
+  
+  .MuiButton-contained {
+    background-color: #1E1E2D;
+    color: white;
+  }
+  
+  .MuiButton-contained:hover {
+    background-color: #389BFF;
+  }
+  
+  /* Modal styles - Keep blur only for modals */
+  .MuiModal-root {
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Remove blur for Select dropdowns */
+  .MuiPopover-root {
+    backdrop-filter: none !important;
+  }
+  
+  .MuiPaper-root {
+    border-radius: 8px;
+  }
+body {
+    padding-bottom: 30px;
+}

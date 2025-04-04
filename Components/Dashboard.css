@@ -1,0 +1,27 @@
+/* Dashboard.css */
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #1E1E2D;
+    border-radius: 30px;
+}
+
+/* Add more padding to the top */
+body {
+    padding-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .MuiBox-root {
+        flex-direction: column;
+    }
+  
+    .MuiPaper-root {
+        min-width: 100% !important;
+    }
+}
